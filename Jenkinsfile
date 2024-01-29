@@ -17,7 +17,7 @@ pipeline {
                 script {
                     app = docker.build("guepilu/react-app")
                     app.inside {
-                        sh 'echo $(curl localhost:1233)'
+                        sh 'echo $(guepilu)'
                     }
                 }
             }
